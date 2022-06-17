@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Happy Monkey", cursive;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #d6d5a8;
+  color: #51557e;
+}
+
+body > * {
+  padding: 20px;
+}
+
+h1,
+h2,
+h4 {
+  text-shadow: 2px 2px 5px #fff;
+}
+
+.avatar {
+  width: 250px;
+  height: 250px;
+  padding: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 10px solid #816797;
+}
