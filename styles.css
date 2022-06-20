@@ -5,17 +5,18 @@
 }
 
 body {
+  /* height: 100vh; */
+  background-color: #d6d5a8;
+  background: linear-gradient(rgb(232, 200, 255), #ffeefb);
+  color: #51557e;
+  text-align: center;
+}
+
+header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #d6d5a8;
-  color: #51557e;
-}
-
-body > * {
-  padding: 20px;
 }
 
 h1,
@@ -24,11 +25,74 @@ h4 {
   text-shadow: 2px 2px 5px #fff;
 }
 
+#age,
+#date {
+  margin: 10px;
+  padding: 5px 10px;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
 .avatar {
   width: 250px;
   height: 250px;
   padding: 0;
+  margin: 20px;
   border-radius: 50%;
   object-fit: cover;
   border: 10px solid #816797;
+}
+
+.gift-section > h2 {
+  margin-top: 40px;
+}
+
+.gift-img {
+  margin: 20px auto;
+  background-image: url("./images/gift_cover.jpg");
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border: 6px solid white;
+  border-radius: 10px;
+}
+
+.gift-img:hover {
+  background-image: url("./images/happy.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#surprise:hover {
+  background-image: url("./images/happy.gif");
+}
+
+#reaction:hover {
+  background-image: url("./images/hot.gif");
+}
+
+#description:hover {
+  background-image: url("./images/genius.gif");
+}
+
+#badass:hover {
+  background-image: url("./images/badass.gif");
+}
+
+#cheers {
+  height: 200px;
+}
+
+#cheers:hover {
+  background-image: url("./images/cheers.gif");
+}
+
+footer {
+  width: 400px;
+  margin: 40px auto;
+}
+
+footer .course-link {
+  color: inherit;
 }
